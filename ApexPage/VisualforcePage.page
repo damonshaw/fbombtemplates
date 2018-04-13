@@ -1,0 +1,9 @@
+<!--/**
+* Description: 
+* @author: {{ developerName }}
+* @date: {{ createdDate }}
+* @test: 
+*/-->
+<apex:page showHeader="true" sidebar="true">
+	
+</apex:page>

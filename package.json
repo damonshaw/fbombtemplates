@@ -213,8 +213,20 @@
     "ApexComponent":[  
         
     ],
-    "ApexPage":[  
-        
+    "ApexPage":[
+        {  
+            "name":"Visualforce Page",
+            "file_name":"VisualforcePage.page",
+            "description":"Basic Visualforce Page template",
+            "author":"Damon Shaw",
+            "params":[  
+                {  
+                    "name":"api_name",
+                    "description":"Visualforce Page API Name",
+                    "default":"MyVisualforcePage"
+                }
+            ]
+        }
     ],
     "ApexTrigger":[  
         {
