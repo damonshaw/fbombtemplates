@@ -1,11 +1,11 @@
 /**
 * Description: 
 * Uses: https://github.com/kevinohara80/sfdc-trigger-framework/tree/master/src/classes
-* @author: {{developerName}}
-* @date: {{createdDate}}
+* @author: {{ developerName }}
+* @date: {{ createdDate }}
 * @test: 
 */
-public with sharing class {{ api_name }}TriggerHandler extends TriggerHandler {
+public with sharing class {{ api_name }} extends TriggerHandler {
 
     public override void beforeDelete() {
 

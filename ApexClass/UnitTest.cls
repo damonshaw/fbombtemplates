@@ -1,8 +1,8 @@
 /**
 * Description: 
-* @author: {{developerName}}
-* @date: {{createdDate}}
-* @tests: 
+* @author: {{ developerName }}
+* @date: {{ createdDate }}
+* @test: 
 */
 @isTest
 private class {{ api_name }} {

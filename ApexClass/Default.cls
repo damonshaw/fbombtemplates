@@ -1,7 +1,7 @@
 /**
 * Description: 
-* @author: {{developerName}}
-* @date: {{createdDate}}
+* @author: {{ developerName }}
+* @date: {{ createdDate }}
 * @test: 
 */
 public with sharing class {{ api_name }} {

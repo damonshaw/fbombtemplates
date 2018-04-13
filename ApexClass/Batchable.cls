@@ -1,7 +1,7 @@
 /**
 * Description: 
-* @author: {{developerName}}
-* @date: {{createdDate}}
+* @author: {{ developerName }}
+* @date: {{ createdDate }}
 * @test: 
 */
 global class {{ api_name }} implements Database.Batchable<sObject> {
