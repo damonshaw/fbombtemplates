@@ -1,0 +1,36 @@
+{  
+    "ApexClass":[  
+        {  
+            "name":"Default",
+            "file_name":"Default.cls",
+            "description":"The default template for an Apex Class",
+            "author":"Damon Shaw",
+            "params":[  
+                {  
+                    "name":"api_name",
+                    "description":"Apex Class API Name",
+                    "default":"MyApexClass"
+                },
+                {  
+                    "name":"developerName",
+                    "description":"Developer Name",
+                    "default":""
+                },
+                {  
+                    "name":"createdDate",
+                    "description":"Created Date",
+                    "default":"01/01/1900"
+                }
+            ]
+        }  
+    ],
+    "ApexComponent":[  
+        
+    ],
+    "ApexPage":[  
+        
+    ],
+    "ApexTrigger":[  
+        
+    ]
+}
