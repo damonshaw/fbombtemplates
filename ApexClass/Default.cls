@@ -1,6 +1,6 @@
 /**
 * Description: 
-* @author: {{developerName}} (Trineo)
+* @author: {{developerName}}
 * @date: {{createdDate}}
 * @test: 
 */
