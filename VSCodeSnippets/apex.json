@@ -1,18 +1,4 @@
 {
-	// Place your snippets for apex here. Each snippet is defined under a snippet name and has a prefix, body and 
-	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
-	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
-	// same ids are connected.
-	// Example:
-	// "Print to console": {
-	// 	"prefix": "log",
-	// 	"body": [
-	// 		"console.log('$1');",
-	// 		"$2"
-	// 	],
-	// 	"description": "Log output to console"
-	// }
-
 	"System.Debug1": {
 		"prefix": "debug input",
 		"body": [
@@ -81,105 +67,105 @@
 	"String 1": {
 		"prefix": "public string",
 		"body": [
-			"public String ${1} { get; set; }",
+			"public String ${1} { get; set; }"
 		],
 		"description": "create a public string"
 	},
 	"String 2": {
 		"prefix": "private string",
 		"body": [
-			"private String ${1} { get; set; }",
+			"private String ${1} { get; set; }"
 		],
 		"description": "create a private string"
 	},
 	"Boolean 1": {
 		"prefix": "public boolean",
 		"body": [
-			"public Boolean ${1} { get; set; }",
+			"public Boolean ${1} { get; set; }"
 		],
 		"description": "create a public boolean"
 	},
 	"Boolean 2": {
 		"prefix": "private boolean",
 		"body": [
-			"private Boolean ${1} { get; set; }",
+			"private Boolean ${1} { get; set; }"
 		],
 		"description": "create a private boolean"
 	},
 	"Integer 1": {
 		"prefix": "public integer",
 		"body": [
-			"public Integer ${1} { get; set; }",
+			"public Integer ${1} { get; set; }"
 		],
 		"description": "create a public integer"
 	},
 	"Integer 2": {
 		"prefix": "private integer",
 		"body": [
-			"private Integer ${1} { get; set; }",
+			"private Integer ${1} { get; set; }"
 		],
 		"description": "create a private integer"
 	},
 	"Decimal 1": {
 		"prefix": "public decimal",
 		"body": [
-			"public Decimal ${1} { get; set; }",
+			"public Decimal ${1} { get; set; }"
 		],
 		"description": "create a public decimal"
 	},
 	"Decimal 2": {
 		"prefix": "private decimal",
 		"body": [
-			"private Decimal ${1} { get; set; }",
+			"private Decimal ${1} { get; set; }"
 		],
 		"description": "create a private decimal"
 	},
 	"Set 1": {
 		"prefix": "public set",
 		"body": [
-			"public Set<${1}> ${2} { get; set; }",
+			"public Set<${1}> ${2} { get; set; }"
 		],
 		"description": "create a public set"
 	},
 	"Set 2": {
 		"prefix": "private set",
 		"body": [
-			"private Set<${1}> ${2} { get; set; }",
+			"private Set<${1}> ${2} { get; set; }"
 		],
 		"description": "create a private set"
 	},
 	"List 1": {
 		"prefix": "public list",
 		"body": [
-			"public List<${1}> ${2} { get; set; }",
+			"public List<${1}> ${2} { get; set; }"
 		],
 		"description": "create a public list"
 	},
 	"List 2": {
 		"prefix": "private list",
 		"body": [
-			"private List<${1}> ${2} { get; set; }",
+			"private List<${1}> ${2} { get; set; }"
 		],
 		"description": "create a private list"
 	},
 	"Map 1": {
 		"prefix": "public map",
 		"body": [
-			"public Map<${1}, ${2}> ${3} { get; set; }",
+			"public Map<${1}, ${2}> ${3} { get; set; }"
 		],
 		"description": "create a public map"
 	},
 	"Map 2": {
 		"prefix": "private map",
 		"body": [
-			"private Map<${1}, ${2}> ${3} { get; set; }",
+			"private Map<${1}, ${2}> ${3} { get; set; }"
 		],
 		"description": "create a private map"
 	},
 	"Page Params 1": {
 		"prefix": "params 1",
 		"body": [
-			"System.currentPageReference().getParameters().get('${1}')",
+			"System.currentPageReference().getParameters().get('${1}')"
 		],
 		"description": "get page parameter"
 	},
@@ -193,14 +179,14 @@
 			"        options.add(new SelectOption(${3},${4}));",
 			"    }",
 			"    return options; ",
-			"}",
+			"}"
 		],
 		"description": "create a select option getter"
 	},
 	"get set 1": {
 		"prefix": "get set",
 		"body": [
-			"{ get; set; }",
+			"{ get; set; }"
 		],
 		"description": "{ get; set; }"
 	},
@@ -214,14 +200,14 @@
 			"        }",
 			"        return ${2};",
 			"    }set;",
-			"}",
+			"}"
 		],
 		"description": "public var { get{} set; }"
 	},
 	"this.var": {
 		"prefix": "this",
 		"body": [
-			"this.${CLIPBOARD} = ",
+			"this.${CLIPBOARD} = "
 		],
 		"description": "this.variable = "
 	},
@@ -292,8 +278,8 @@
 	"Select 1": {
 		"prefix": "[SELECT",
 		"body": [
-			"[SELECT Id FROM ${1} WHERE ${2}",
+			"[SELECT Id FROM ${1} WHERE ${2}"
 		],
 		"description": "basic SOQL select statement"
-	},
+	}
 }
