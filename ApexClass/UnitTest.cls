@@ -2,7 +2,7 @@
 * Description: 
 * @author: {{ developerName }}
 * @date: {{ createdDate }}
-* @test: 
+* @tests: 
 */
 @isTest
 private class {{ api_name }} {
