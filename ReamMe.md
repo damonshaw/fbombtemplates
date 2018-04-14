@@ -1,0 +1,1 @@
+![template settings](https://github.com/damonshaw/fbombtemplates/blob/master/TemplateSource.PNG)
