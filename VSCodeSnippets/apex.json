@@ -37,7 +37,7 @@
 		],
 		"description": "a try catch statement"
     },
-	"Header 1": {
+	"Header": {
 		"prefix": "header1",
 		"body": [
 			"/**",
@@ -49,114 +49,99 @@
 		],
 		"description": "class header"
 	},
-	"Header 2": {
-		"prefix": "header2",
-		"body": [
-			"/*------------------------------------------------------------",
-			"Author:         Damon Shaw",
-			"Company:        Trineo",
-			"Description:    ${1}",
-			"Test Class:     ${2}",
-			"",
-			"History",
-			"${CURRENT_DATE}/${CURRENT_MONTH}/${CURRENT_YEAR}      Damon Shaw    Created",
-			"------------------------------------------------------------*/"
-		],
-		"description": "class header"
-	},
 	"String 1": {
-		"prefix": "public string",
+		"prefix": "string public",
 		"body": [
 			"public String ${1} { get; set; }"
 		],
 		"description": "create a public string"
 	},
 	"String 2": {
-		"prefix": "private string",
+		"prefix": "string private",
 		"body": [
 			"private String ${1} { get; set; }"
 		],
 		"description": "create a private string"
 	},
 	"Boolean 1": {
-		"prefix": "public boolean",
+		"prefix": "boolean public",
 		"body": [
 			"public Boolean ${1} { get; set; }"
 		],
 		"description": "create a public boolean"
 	},
 	"Boolean 2": {
-		"prefix": "private boolean",
+		"prefix": "boolean private",
 		"body": [
 			"private Boolean ${1} { get; set; }"
 		],
 		"description": "create a private boolean"
 	},
 	"Integer 1": {
-		"prefix": "public integer",
+		"prefix": "integer public",
 		"body": [
 			"public Integer ${1} { get; set; }"
 		],
 		"description": "create a public integer"
 	},
 	"Integer 2": {
-		"prefix": "private integer",
+		"prefix": "integer private",
 		"body": [
 			"private Integer ${1} { get; set; }"
 		],
 		"description": "create a private integer"
 	},
 	"Decimal 1": {
-		"prefix": "public decimal",
+		"prefix": "decimal public",
 		"body": [
 			"public Decimal ${1} { get; set; }"
 		],
 		"description": "create a public decimal"
 	},
 	"Decimal 2": {
-		"prefix": "private decimal",
+		"prefix": "decimal private",
 		"body": [
 			"private Decimal ${1} { get; set; }"
 		],
 		"description": "create a private decimal"
 	},
 	"Set 1": {
-		"prefix": "public set",
+		"prefix": "set public",
 		"body": [
 			"public Set<${1}> ${2} { get; set; }"
 		],
 		"description": "create a public set"
 	},
 	"Set 2": {
-		"prefix": "private set",
+		"prefix": "set private",
 		"body": [
 			"private Set<${1}> ${2} { get; set; }"
 		],
 		"description": "create a private set"
 	},
 	"List 1": {
-		"prefix": "public list",
+		"prefix": "list public",
 		"body": [
 			"public List<${1}> ${2} { get; set; }"
 		],
 		"description": "create a public list"
 	},
 	"List 2": {
-		"prefix": "private list",
+		"prefix": "list private",
 		"body": [
 			"private List<${1}> ${2} { get; set; }"
 		],
 		"description": "create a private list"
 	},
 	"Map 1": {
-		"prefix": "public map",
+		"prefix": "map public",
 		"body": [
 			"public Map<${1}, ${2}> ${3} { get; set; }"
 		],
 		"description": "create a public map"
 	},
 	"Map 2": {
-		"prefix": "private map",
+		"prefix": "map private",
 		"body": [
 			"private Map<${1}, ${2}> ${3} { get; set; }"
 		],
@@ -214,7 +199,7 @@
 	"database.insert 1": {
 		"prefix": "database.insert input List",
 		"body": [
-			"Database.SaveResult[] srList = Database.insert(${1}, ${2:Boolean});",
+			"Database.SaveResult[] srList = Database.Insert(${1}, ${2:Boolean});",
 			"for(Database.SaveResult sr : srList) {",
 			"    if(sr.isSuccess()) {",
 			"        ",
@@ -231,7 +216,7 @@
 	"database.insert 2": {
 		"prefix": "database.insert clipboard List",
 		"body": [
-			"Database.SaveResult[] srList = Database.insert(${CLIPBOARD}, ${1:Boolean});",
+			"Database.SaveResult[] srList = Database.Insert(${CLIPBOARD}, ${1:Boolean});",
 			"for(Database.SaveResult sr : srList) {",
 			"    if(sr.isSuccess()) {",
 			"        ",
@@ -248,7 +233,7 @@
 	"database.insert 3": {
 		"prefix": "database.insert input Single",
 		"body": [
-			"Database.SaveResult sr = Database.insert(${1}, ${2:Boolean});",
+			"Database.SaveResult sr = Database.Insert(${1}, ${2:Boolean});",
 			"if(sr.isSuccess()) {",
 			"    ",
 			"}",
@@ -263,7 +248,7 @@
 	"database.insert 4": {
 		"prefix": "database.insert clipboard Single",
 		"body": [
-			"Database.SaveResult sr = Database.insert(${CLIPBOARD}, ${1:Boolean});",
+			"Database.SaveResult sr = Database.Insert(${CLIPBOARD}, ${1:Boolean});",
 			"if(sr.isSuccess()) {",
 			"    ",
 			"}",
@@ -274,6 +259,134 @@
 			"}"
 		],
 		"description": "database.insert"
+	},
+	"database.update 1": {
+		"prefix": "database.update input List",
+		"body": [
+			"Database.SaveResult[] srList = Database.Update(${1}, ${2:Boolean});",
+			"for(Database.SaveResult sr : srList) {",
+			"    if(sr.isSuccess()) {",
+			"        ",
+			"    }",
+			"    else {",
+			"        for(Database.Error err : sr.getErrors()) {",
+			"            ",
+			"        }",
+			"    }",
+			"}"
+		],
+		"description": "database.update"
+	},
+	"database.update 2": {
+		"prefix": "database.update clipboard List",
+		"body": [
+			"Database.SaveResult[] srList = Database.Update(${CLIPBOARD}, ${1:Boolean});",
+			"for(Database.SaveResult sr : srList) {",
+			"    if(sr.isSuccess()) {",
+			"        ",
+			"    }",
+			"    else {",
+			"        for(Database.Error err : sr.getErrors()) {",
+			"            ",
+			"        }",
+			"    }",
+			"}"
+		],
+		"description": "database.update"
+	},
+	"database.update 3": {
+		"prefix": "database.update input Single",
+		"body": [
+			"Database.SaveResult sr = Database.Update(${1}, ${2:Boolean});",
+			"if(sr.isSuccess()) {",
+			"    ",
+			"}",
+			"else {",
+			"    for(Database.Error err : sr.getErrors()) {",
+			"        ",
+			"    }",
+			"}"
+		],
+		"description": "database.update"
+	},
+	"database.update 4": {
+		"prefix": "database.update clipboard Single",
+		"body": [
+			"Database.SaveResult sr = Database.Update(${CLIPBOARD}, ${1:Boolean});",
+			"if(sr.isSuccess()) {",
+			"    ",
+			"}",
+			"else {",
+			"    for(Database.Error err : sr.getErrors()) {",
+			"        ",
+			"    }",
+			"}"
+		],
+		"description": "database.update"
+	},
+	"database.upsert 1": {
+		"prefix": "database.upsert input List",
+		"body": [
+			"Database.SaveResult[] srList = Database.Upsert(${1}, ${2:Boolean});",
+			"for(Database.SaveResult sr : srList) {",
+			"    if(sr.isSuccess()) {",
+			"        ",
+			"    }",
+			"    else {",
+			"        for(Database.Error err : sr.getErrors()) {",
+			"            ",
+			"        }",
+			"    }",
+			"}"
+		],
+		"description": "database.upsert"
+	},
+	"database.upsert 2": {
+		"prefix": "database.upsert clipboard List",
+		"body": [
+			"Database.SaveResult[] srList = Database.Upsert(${CLIPBOARD}, ${1:Boolean});",
+			"for(Database.SaveResult sr : srList) {",
+			"    if(sr.isSuccess()) {",
+			"        ",
+			"    }",
+			"    else {",
+			"        for(Database.Error err : sr.getErrors()) {",
+			"            ",
+			"        }",
+			"    }",
+			"}"
+		],
+		"description": "database.upsert"
+	},
+	"database.upsert 3": {
+		"prefix": "database.upsert input Single",
+		"body": [
+			"Database.SaveResult sr = Database.Upsert(${1}, ${2:Boolean});",
+			"if(sr.isSuccess()) {",
+			"    ",
+			"}",
+			"else {",
+			"    for(Database.Error err : sr.getErrors()) {",
+			"        ",
+			"    }",
+			"}"
+		],
+		"description": "database.upsert"
+	},
+	"database.upsert 4": {
+		"prefix": "database.upsert clipboard Single",
+		"body": [
+			"Database.SaveResult sr = Database.Upsert(${CLIPBOARD}, ${1:Boolean});",
+			"if(sr.isSuccess()) {",
+			"    ",
+			"}",
+			"else {",
+			"    for(Database.Error err : sr.getErrors()) {",
+			"        ",
+			"    }",
+			"}"
+		],
+		"description": "database.upsert"
 	},
 	"Select 1": {
 		"prefix": "[SELECT",
