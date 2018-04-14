@@ -154,6 +154,34 @@
             ]
         },
         {
+            "name":"UnitTestWithMock",
+            "file_name":"UnitTestWithMock.cls",
+            "description":"A UnitTest Class with Callout mocks",
+            "author":"Damon Shaw",
+            "params":[  
+                {  
+                    "name":"api_name",
+                    "description":"Apex Class API Name",
+                    "default":"MySchedulableBatchClass"
+                },
+                {  
+                    "name":"developerName",
+                    "description":"Developer Name",
+                    "default":""
+                },
+                {
+                    "name":"createdDate",
+                    "description":"Created Date",
+                    "default":"01/01/1900"
+                },
+                {
+                    "name":"testMehodName",
+                    "description":"First test methods name",
+                    "default":"01/01/1900"
+                }
+            ]
+        },
+        {
             "name":"RestResource",
             "file_name":"RestResource.cls",
             "description":"A RestResource Class",
