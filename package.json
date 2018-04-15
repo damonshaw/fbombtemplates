@@ -252,7 +252,7 @@
                     "name":"api_name",
                     "description":"Visualforce Page API Name",
                     "default":"MyVisualforcePage"
-                }
+                },
                 {  
                     "name":"developerName",
                     "description":"Developer Name",
