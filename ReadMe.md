@@ -11,6 +11,11 @@ or download the files locally, change your `MAVENSMATE TEMPLATES LOCATION (MM_TE
 
 
 
+
+
+F-Bomb Snippets
+=================
+
 To add the snippets to Sublime, copy the contents of the SublimeSnippents folder to your local drive,
 ```sh
 Mac OS: /Users/{!User}/Library/Application Support/Sublime Text 3/Packages/User/
