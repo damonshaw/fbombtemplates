@@ -253,6 +253,16 @@
                     "description":"Visualforce Page API Name",
                     "default":"MyVisualforcePage"
                 }
+                {  
+                    "name":"developerName",
+                    "description":"Developer Name",
+                    "default":""
+                },
+                {
+                    "name":"createdDate",
+                    "description":"Created Date",
+                    "default":"01/01/1900"
+                }
             ]
         },
         {
