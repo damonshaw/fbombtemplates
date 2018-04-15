@@ -7,7 +7,7 @@ To start using the templates update your settings in Mavensmate
 
 or download the files locally, change your `MAVENSMATE TEMPLATES LOCATION (MM_TEMPLATE_LOCATION)` setting to 'local' and point the `MAVENSMATE TEMPLATE SOURCE (MM_TEMPLATE_SOURCE)` setting to your file location.
 
-![local settings](https://github.com/damonshaw/fbombtemplates/blob/master/localTemplateSource.PNG)
+![local settings](https://github.com/damonshaw/fbombtemplates/blob/master/localTemplateSource.png)
 
 
 
